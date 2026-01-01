@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/2532752e60.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>home</title>
+  </head>
+  <body>
+    <section id="sub-header">
+      <nav>
+        <a href="./index.html"><img src="eduford_img/logo.png" class="logo" /></a>
+
+        <div class="menues" id="toggle">
+          <i class="fa-solid fa-bars" id="bar" onclick="openmenu()"></i>
+          <ul class="options">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./course.html">Course</a></li>
+            <li><a href="./about.html">About</a></li>
+          </ul>
+          <i class="fa-solid fa-xmark" id="cross" onclick="closemenu()"></i>
+        </div>
+      </nav>
+
+      
+      <h1>About Us</h1>
+
+
+    </section>
+    <section class="about-us">
+        <div class="row contact-row">
+            <div class="about-col">
+                <h1>We are the World's Largest University</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid quod, sapiente atque quia ab veritatis delectus impedit facilis suscipit doloribus, unde eveniet eum? Accusantium illo enim fugit ullam? Delectus, voluptates?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum dolores expedita mollitia accusantium id nemo aperiam nobis quae eos debitis accusamus consequatur laborum voluptatibus voluptate culpa distinctio, delectus, aliquid sed.</p>
+                <button class="contact-btn">Explore Now</button>
+            </div>
+            <div class="about-col">
+                <img src="eduford_img/about.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+<footer>
+
+  <h1>
+    About Us 
+  </h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe repudiandae dolores ut, voluptate non nesciunt ratione aperiam consequatur vero. Architecto necessitatibus veritatis incidunt fugiat quas repudiandae non, rerum ipsa blanditiis?</p>
+  <i class="fa-brands fa-instagram"></i>
+  <i class="fa-brands fa-facebook"></i>
+  <i class="fa-brands fa-linkedin-in"></i>
+  <i class="fa-brands fa-twitter"></i>
+  <p id="credits">Made with <i class="fa-regular fa-heart"></i> By Kavy Prajapati</p>
+</footer>
+
+    <script>
+      var menues = document.getElementById("toggle");
+      var bars = document.getElementById("bar");
+      var cross = document.getElementById("cross");
+      function openmenu() {
+        menues.style.right = "0";
+        bars.style.display = "none";
+        cross.style.display = "block";
+      }
+      function closemenu() {
+        menues.style.right = "-200px";
+        cross.style.display = "none ";
+        bars.style.display = "block ";
+      }
+    </script>
+  </body>
+</html>

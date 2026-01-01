@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/2532752e60.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>home</title>
+  </head>
+  <body>
+    <section id="sub-header">
+      <nav>
+        <a href="./index.html"><img src="eduford_img/logo.png" class="logo" /></a>
+
+        <div class="menues" id="toggle">
+          <i class="fa-solid fa-bars" id="bar" onclick="openmenu()"></i>
+          <ul class="options">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./course.html">Course</a></li>
+            <li><a href="./about.html">About</a></li>
+          </ul>
+          <i class="fa-solid fa-xmark" id="cross" onclick="closemenu()"></i>
+        </div>
+      </nav>
+
+      <h1>Our Certificates & Online Program For 2025</h1>
+    </section>
+    <section class="blog">
+      <div class="row">
+      <div class="blog-col-left">
+        <img src="eduford_img/certificate.jpg" alt="" />
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae
+          saepe iste labore exercitationem quae accusantium laborum, nemo
+          obcaecati dolorum asperiores officia ea nisi excepturi, at, error sint
+          eaque iusto maxime Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Perferendis quo explicabo temporibus. Possimus distinctio soluta
+          porro quisquam impedit vel quae hic tempore reiciendis! Quasi a
+          voluptates perspiciatis, minima pariatur velit quidem! Totam vel
+          tenetur dolorum libero officia veritatis. Minima, fuga. Lorem ipsum
+          dolor sit amet consectetur adipisicing elit. Suscipit perspiciatis
+          quas illo consequuntur voluptatum nobis esse, vitae repellat ipsa
+          optio reprehenderit beatae facere eaque minima neque perferendis eos
+          mollitia aliquam saepe ducimus dignissimos assumenda? Architecto sed
+          officiis, nesciunt dolorum doloremque consectetur similique suscipit
+          numquam impedit amet obcaecati saepe incidunt perspiciatis nulla ut
+          nobis soluta dolore nisi? Atque culpa pariatur dolorem.
+        </p>
+        <br/>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae
+          saepe iste labore exercitationem quae accusantium laborum, nemo
+          obcaecati dolorum asperiores officia ea nisi excepturi, at, error sint
+          eaque iusto maxime Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Perferendis quo explicabo temporibus. Possimus distinctio soluta
+          porro quisquam impedit vel quae hic tempore reiciendis! Quasi a
+          voluptates perspiciatis, minima pariatur velit quidem! Totam vel
+          tenetur dolorum libero officia veritatis. Minima, fuga. Lorem ipsum</p>
+          <br>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae
+          saepe iste labore exercitationem quae accusantium laborum, nemo
+          obcaecati dolorum asperiores officia ea nisi excepturi, at, error sint
+          eaque iusto maxime Lorem ipsum dolor sit amet consectetur adipisicing
+          elit.</p>
+           
+          <div class="leave-comment">
+      <h3>Leave a Comment</h3>
+
+      <form action="#">
+
+        <input type="text" name="name" placeholder="Enter Your Name">
+        <input type="email" name="email" placeholder="Enter Your Email">
+        <textarea name="comment" id="" rows="5"></textarea>
+        <button class="contact-btn" type="submit">POST COMMENT</button>
+      </form>
+    </div>
+      </div>
+      <div class="blog-col-right">
+        <h3>Post Categories</h3>
+        <div>
+          <span>Computer Engineering</span>
+          <span>21</span>
+        </div>
+        <div>
+          <span>Machine Learning</span>
+          <span>34</span>
+        </div>
+        <div>
+          <span>Data Science</span>
+          <span>34</span>
+        </div>
+        <div>
+          <span>Web Technologies</span>
+          <span>18</span>
+        </div>
+        <div>
+          <span>Commerce</span>
+          <span>20</span>
+        </div>
+        <div>
+          <span>AutoCAD</span>
+          <span>13</span>
+        </div>
+      </div>
+    </div>
+
+    
+    </section>
+
+    <footer>
+      <h1>About Us</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+        repudiandae dolores ut, voluptate non nesciunt ratione aperiam
+        consequatur vero. Architecto necessitatibus veritatis incidunt fugiat
+        quas repudiandae non, rerum ipsa blanditiis?
+      </p>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-linkedin-in"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <p id="credits">
+        Made with <i class="fa-regular fa-heart"></i> By Kavy Prajapati
+      </p>
+    </footer>
+
+    <script>
+      var menues = document.getElementById("toggle");
+      var bars = document.getElementById("bar");
+      var cross = document.getElementById("cross");
+      function openmenu() {
+        menues.style.right = "0";
+        bars.style.display = "none";
+        cross.style.display = "block";
+      }
+      function closemenu() {
+        menues.style.right = "-200px";
+        cross.style.display = "none ";
+        bars.style.display = "block ";
+      }
+    </script>
+  </body>
+</html>
